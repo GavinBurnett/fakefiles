@@ -1,0 +1,32 @@
+# Config entries:
+# Dir=Directory : Files=Number of files : Sizes=File sizes : Names=File names : Extensions=File extensions
+# 
+# Directory is configured: 
+# Dir=Directory
+# Dir=Directory/SubDirectory
+# Dir=Directory/SubDirectory1/SubDirectory2
+#
+# Number of files is configured:
+# Files=Lower Number-Higher Number
+# Files=0-10
+# Number of files to generate is randomly chosen in range between lower and higher number 
+#
+# File sizes is configured:
+# Sizes=Lower Number-Higher Number
+# Sizes=1-100
+# Size of each file generated (in megabytes) is randomly chosen in range between lower and higher number 
+#
+# File names is configured:
+# Names=FileName1,FileName2
+# Multiple file names can be set by comma delimiters
+# 
+# File extensions is configured:
+# Extensions=Extension1,Extension2
+# Multiple file extensions can be set by comma delimiters
+# Each extension is applied to each configured file name - E.G
+# FileName1.Extension1
+# FileName2.Extension2
+#
+Dir=Setec Astronomy
+Dir=Setec Astronomy/Data:Files=1-30:Sizes=1-10:Names=report,results:Extensions=doc,xls
+Dir=Setec Astronomy/Videos:Files=1-5:Sizes=1-100:Names=darktest:Extensions=mp4
